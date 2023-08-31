@@ -12,8 +12,10 @@ function stringMasLarga(strings) {
   // stringMasLarga(['JavaScript', 'HTML', 'CSS']); debe retornar 'JavaScript'
 
   // Tu código aca
+  var palabraLarga = strings.sort((a, b) => a.length - b.length).reverse();
+  return palabraLarga[0];
 }
 
 // No modifiques nada debajo de esta linea //
 
-module.exports = stringMasLarga
+module.exports = stringMasLarga;
